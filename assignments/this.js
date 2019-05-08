@@ -43,5 +43,15 @@ jared.mother.sayName();
 // code example for New Binding
 
 // Principle 4
+// code example for Explicit Binding (call, apply, bind)
 
-// code example for Explicit Binding
+var sayName = function() {
+    console.log('My name is' + ' ' + this.name);
+}
+
+var jared = {
+    name: 'Jared',
+    age: 36,
+}
+
+sayName.call(jared);
